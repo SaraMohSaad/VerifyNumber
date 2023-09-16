@@ -2,6 +2,9 @@ const express = require("express");
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+const historyRouter = require('./API/searchHistoryRoute');
+
+
 const cors = require('cors');
 const app = express();
 
@@ -9,7 +12,6 @@ app.use(express.json());
 
 const port = process.env.PORT || "9000";
 
-console.log(process.env.mongoURl)
 mongoose.connect(process.env.mongoURl)
 .then(()=>{
   console.log("MongoDB is now connected!")
@@ -19,11 +21,7 @@ mongoose.connect(process.env.mongoURl)
 })
 .catch(err => console.log(err));
 
-app.use(cors())
+app.use(cors({origin: "http://localhost:3000"}));
 
-//common routes
-// app.post('/signup', signup);
-// app.post('/login', login)
-// app.get('/logout',requireAuth, logout);
-// app.post('/adminLogin', adminLogin)
-// app.get('/search/:searchkey', search)
+app.use('/addSearchItem', historyRouter);
+

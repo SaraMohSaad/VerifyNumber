@@ -1,0 +1,135 @@
+.Login_body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+
+.login-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(2, 40, 64);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+  }
+  
+  .login-box .login_h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: x-large;
+    display: block;
+  }
+
+  .login-box .login_h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #0DB8DE;
+    text-align: center;
+    font-size: x-large;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box .login_input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box .login_label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box .login_input:focus ~ .login_label,
+  .login-box .user-box .login_input:valid ~ .login_label {
+    top: -20px;
+    left: 0;
+    color: #0DB8DE;
+    font-size: 12px;
+  }
+  
+  .login-box .login_form .login_a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    background-color:  #0DB8DE;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    align-self: center;
+  }
+  
+  .login-box .login_a:hover {
+    background: transparent;
+    color: #0DB8DE;
+    border: 2px solid #0DB8DE;
+    cursor: pointer;
+    
+  }
+
+  .login-box .forgot_password {
+    color: #0DB8DE;
+    align-self: center;
+    font-size: small;
+    margin-top: 5px;
+  }
+
+  .login-box .forgot_password:hover {
+    color: #12d3ff;
+    transition: .5s;
+  }
+
+  .login-box .signup{
+    color: #fff;
+    align-self: center;
+    font-size: small;
+    margin-top: 5px;
+  }
+
+  .login-box .required{
+    color: rgb(213, 13, 13);
+    align-self: center;
+    font-size: small;
+    margin-bottom: 3px;
+  }
+
+
+.fa{
+  color: white;
+      position: relative;
+      left: 90%;
+      top: -45px;
+
+}
